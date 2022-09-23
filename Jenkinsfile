@@ -1,12 +1,11 @@
 pipeline {
-    agent {} label 'master'}
+    agent any
 
     stages {
 
         stage('test') {
             steps {
-                dir ("src/main")
-                sh "mvn clean compile test"
+                echo "mvn clean compile"
 
             }
             
