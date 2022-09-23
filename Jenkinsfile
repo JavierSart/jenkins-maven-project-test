@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage('test') {
+        stage('Compile') {
             steps {
                 echo "mvn clean compile"
                 sh "mvn clean compile"
@@ -11,13 +11,13 @@ pipeline {
             
         }
 
-        stage("build application") {
+        stage("Test") {
             steps {
                 echo "WIP"
             }
         }
 
-        stage("Create docker image") {
+        stage("Prueba") {
             steps {
                 echo("WIP2")
             }
